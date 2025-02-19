@@ -1,0 +1,145 @@
+.workerCard {
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  background: var(--surface);
+  min-width: 200px;
+  max-width: 245px;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid var(--borders);
+  animation: fadeIn forwards 1s ease;
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+
+.workerCard:not(:hover) {
+  scale: 0.98;
+}
+
+.workerCard:hover {
+  scale: 1.03;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.workerCard .menuIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--on-surface);
+  z-index: 10;
+  transition: 0.2s ease all;
+}
+
+.workerCard .menuIcon:hover {
+}
+
+.workerCard .menuIcon:hover .additionalOption {
+  display: block;
+  animation: fadeIn forwards 0.5s ease;
+}
+
+.workerCard .menuIcon:hover .additionalOption .options {
+  width: 100%;
+  height: 100%;
+}
+
+.workerCard .menuIcon .additionalOption .options .option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 33px;
+  font-size: 12px;
+  padding: 10px;
+  color: var(--on-backgrounds);
+}
+
+.workerCard .menuIcon .additionalOption .options .option:hover {
+  background-color: var(--surface);
+}
+
+.workerCard .menuIcon .additionalOption .options .option:hover:first-child {
+  border-radius: 10px 0 0 0;
+}
+.workerCard .menuIcon .additionalOption .options .option:hover:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.workerCard .menuIcon .additionalOption .options .option svg {
+  margin-right: 10px;
+}
+
+.workerCard .additionalOption {
+  display: none;
+  position: absolute;
+  top: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--background);
+  z-index: 10000;
+  right: 22px;
+  border-radius: 10px 0 10px 10px;
+  border: 1px solid var(--borders);
+}
+
+.workerCard .additionalOption .options {
+}
+
+.workerCard .additionalOption .options .option {
+}
+
+.workerCard .info {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.workerCard .info .profilePic {
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.workerCard .info .profilePic img {
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+  background: var(--primary);
+}
+.workerCard .info .profilePic .active {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--secondary);
+  border-radius: 50%;
+  /* box-shadow: 0 0 4px var(--secondary); */
+  bottom: 0;
+  right: 80px;
+}
+
+.workerCard .info .majorInfo .name {
+  text-align: center;
+  margin-top: 8px;
+  color: var(--on-surface);
+  font-size: 16px;
+  opacity: 0.7;
+}

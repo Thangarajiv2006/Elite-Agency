@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 60px;
+}
+
+.header h1 {
+  font-size: 13px;
+  background: var(--surface);
+  color: var(--on-surface);
+  font-weight: 400;
+  padding: 9px 40px;
+  border: 1px solid var(--borders);
+  border-radius: 10px;
+}
+
+.workerContainer {
+  min-height: calc(100vh - 90px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, 275px);
+  background: var(--background);
+  gap: 10px;
+  padding: 0 10px;
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

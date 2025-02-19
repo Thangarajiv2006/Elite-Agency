@@ -1,0 +1,62 @@
+.Signupform {
+  background-color: var(--surface);
+  color: var(--on-surface);
+  width: 500px;
+  border-radius: 10px;
+  border: 1px solid var(--borders);
+}
+
+.Signupform .header {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--on-primary);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.Signupform form {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divderLine {
+  width: 50%;
+  overflow: auto;
+  padding-left: 10px;
+  position: relative;
+}
+
+.divderLine::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 175px;
+  background: azure;
+  top: 57px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.Signupform form p {
+  font-size: 12px;
+  color: var(--on-surface);
+  margin-bottom: 10px;
+}
+
+.Signupform form p a {
+  color: var(--primary);
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.3s all ease;
+}
+.Signupform form p a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}

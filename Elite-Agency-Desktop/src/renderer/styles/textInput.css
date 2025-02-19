@@ -1,0 +1,55 @@
+.textfield {
+  /* border-radius: 20px; */
+  width: 100%;
+  height: 40px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.textfield .eye {
+}
+
+.textfield input {
+  border: 1px solid var(--borders);
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  background: var(--input-background);
+  color: var(--input-text);
+  padding: 0 10px;
+  font-size: 11px;
+  outline: none;
+}
+
+.textfield input:focus,
+.textfield input:active,
+.textfield input:valid {
+  border-color: var(--on-surface);
+}
+
+.textfield .title {
+  position: absolute;
+  left: 10px;
+  background: var(--input-background);
+  top: 12px;
+  color: var(--input-text);
+  font-size: 11px;
+  pointer-events: none;
+  height: fit-content;
+  width: fit-content;
+  transition: 0.3s ease;
+}
+
+.textfield input:focus ~ .title,
+.textfield input:valid ~ .title {
+  top: -7px;
+  font-size: 10px;
+}
+
+.textfield .eye {
+  font-size: 16px;
+  color: var(--on-surface);
+  position: absolute;
+  right: 10px;
+  top: 13px;
+}

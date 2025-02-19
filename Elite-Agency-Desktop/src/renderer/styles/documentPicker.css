@@ -1,0 +1,49 @@
+.documentPicker {
+  height: 160px;
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+.documentPicker .label {
+  background-color: var(--surface);
+  width: 100%;
+  height: 160px;
+  border: 2px dashed var(--primary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.documentPicker .label .title {
+  /* background-color: aliceblue; */
+  color: var(--on-surface);
+  font-size: 12px;
+}
+.documentPicker .label .subTitle {
+  background-color: aliceblue;
+}
+.documentPicker .label .upload {
+  color: var(--primary);
+  width: 100px;
+  height: min-content;
+}
+
+.documentPicker .replace {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: var(--on-surface);
+  background-color: var(--surface);
+  border: 1px solid var(--borders);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 50%;
+}
+
+.documentPicker .replace:hover {
+  background-color: var();
+}

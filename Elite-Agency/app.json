@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Elite Agency",
+    "slug": "elite-agency",
+    "version": "1.1.0",
+    "orientation": "portrait ",
+    "icon": "./assets/images/appLogo.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#211F20"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.thangarajiv.EliteAgency"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/splash.jpg",
+        "backgroundColor": "#211F20"
+      },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
+      "package": "com.thangarajiv.EliteAgency"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/appIcon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "@config-plugins/react-native-blob-util",
+      "@config-plugins/react-native-pdf"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "dc23be1e-6866-4dd7-a1c1-82d66de57233"
+      }
+    },
+    "owner": "thangarajiv",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/dc23be1e-6866-4dd7-a1c1-82d66de57233"
+    }
+  }
+}

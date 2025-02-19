@@ -1,0 +1,26 @@
+.categoryInputContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  /* height: 400px; */
+  border: 2px solid var(--borders);
+  border-radius: 10px;
+  background-color: var(--surface);
+}
+
+.categoryInputContainer .containerHeader {
+  height: 50px;
+  background: linear-gradient(60deg, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.categoryInputContainer form {
+  padding: 0 10px;
+}

@@ -1,7 +1,7 @@
 import { login, logout } from "@/actions/auth.action";
 import axios from "axios";
 
-const API_BASE_URL = import.meta.env.BACKEND_URL || "http://localhost:5000/api";
+const API_BASE_URL = "https://eliteagency12.netlify.app/api";
 
 const axiosInstance = axios.create({
   baseURL: API_BASE_URL,

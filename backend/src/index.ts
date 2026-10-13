@@ -6,19 +6,14 @@ import cors from "cors";
 import { errorMiddleware } from "./middlewares/errorHandler";
 
 const app = express();
-app.use(
-  cors({
-    origin: [
-      "http://localhost:6001",
-      "http://localhost:3000",
-      "http://localhost:4173",
-    ],
-    credentials: true,
-  }),
-);
+app.use(cors());
 
-const PORT = process.env.PORT || 5000;
+const portValue = process.env.PORT;
+const PORT = portValue ? Number(portValue) : 5000;
 
+if (!Number.isInteger(PORT) || PORT < 1 || PORT > 65535) {
+  throw new Error("Invalid PORT configuration");
+}
 app.use(express.json({ limit: "10mb" }));
 
 app.use(express.urlencoded({ limit: "10mb", extended: true }));
